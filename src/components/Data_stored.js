@@ -52,7 +52,7 @@ function Data_stored() {
 
   return (
     <>
-      <div className="col-lg-12 py-5">
+      <div className="col-lg-12 py-5 ">
         <div className="row justify-content-center ">
           <div class="form-floating col-lg-3 mb-3">
             <input
@@ -80,7 +80,7 @@ function Data_stored() {
               Email address
             </label>
           </div>
-          <div className="col-lg-1 py-1">
+          <div className="col-lg-1 py-1 text-center">
             <Button
               variant="contained"
               onClick={submitHandler}
@@ -105,10 +105,18 @@ function Data_stored() {
           {status ? (
             <tbody>
               <tr>
-                <td>No Data Stored Yet !</td>
-                <td>No Data Stored Yet !</td>
-                <td>No Data Stored Yet !</td>
-                <td>No Data Stored Yet !</td>
+                <td>
+                  <p>No Data Stored Yet !</p>
+                </td>
+                <td>
+                  <p>No Data Stored Yet !</p>
+                </td>
+                <td>
+                  <p>No Data Stored Yet !</p>
+                </td>
+                <td>
+                  <p>No Data Stored Yet !</p>
+                </td>
               </tr>
             </tbody>
           ) : (
@@ -131,6 +139,7 @@ function Data_stored() {
                         fontSize="large"
                         className="text-danger"
                         onClick={() => deleteHandler(index)}
+                        style={{ cursor: "pointer" }}
                       />
                     </td>
                   </tr>

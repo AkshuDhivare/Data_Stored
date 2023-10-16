@@ -1,13 +1,17 @@
 import Data_stored from "./components/Data_stored";
 import Header from "./components/Header";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 function App() {
   return (
     <>
       <div className="container-fluid">
-        <div className="row justify-content-center ">
+        <div className="row justify-content-center  ">
           <Header />
           <Data_stored />
           <ToastContainer
